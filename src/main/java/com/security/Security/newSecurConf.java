@@ -37,6 +37,7 @@ public class newSecurConf {
         return httpSecurity.build();
     }
 
+    @Bean
     public  PasswordEncoder passwordEncoder() {
         PasswordEncoder encoder = PasswordEncoderFactories.createDelegatingPasswordEncoder();
         return encoder;
